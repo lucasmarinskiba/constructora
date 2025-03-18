@@ -56,14 +56,44 @@
     </section>
 
     <section id="servicios" class="servicios">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-            <li>Construcción Residencial</li>
-            <li>Construcción Comercial</li>
-            <li>Diseño Arquitectónico</li>
-            <li>Gestión de Proyectos</li>
-        </ul>
-    </section>
+    <h2>Nuestros Servicios</h2>
+    <div class="servicio">
+        <div class="servicio-header" onclick="toggleServicio(1)">
+            <span>Construcción Residencial</span>
+            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        </div>
+        <div class="servicio-contenido" id="servicio-1">
+            <p>Ofrecemos construcción de viviendas unifamiliares y multifamiliares con los más altos estándares de calidad.</p>
+        </div>
+    </div>
+    <div class="servicio">
+        <div class="servicio-header" onclick="toggleServicio(2)">
+            <span>Construcción Comercial</span>
+            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        </div>
+        <div class="servicio-contenido" id="servicio-2">
+            <p>Desarrollamos espacios comerciales modernos y funcionales para todo tipo de negocios.</p>
+        </div>
+    </div>
+    <div class="servicio">
+        <div class="servicio-header" onclick="toggleServicio(3)">
+            <span>Diseño Arquitectónico</span>
+            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        </div>
+        <div class="servicio-contenido" id="servicio-3">
+            <p>Nuestro equipo de arquitectos diseña proyectos innovadores y personalizados.</p>
+        </div>
+    </div>
+    <div class="servicio">
+        <div class="servicio-header" onclick="toggleServicio(4)">
+            <span>Gestión de Proyectos</span>
+            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        </div>
+        <div class="servicio-contenido" id="servicio-4">
+            <p>Gestionamos todos los aspectos de tus proyectos de construcción para garantizar su éxito.</p>
+        </div>
+    </div>
+</section>
 
     <section id="contacto" class="contacto">
         <h2>Contacto</h2>
