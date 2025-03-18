@@ -72,32 +72,34 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Estilos para la sección de proyectos */
 .proyectos {
-    position: relative; /* Necesario para posicionar el fondo semitransparente */
     padding: 50px 20px;
     text-align: center;
-    background-color: white; /* Fondo blanco */
 }
 
-.fondo-semitransparente {
-    position: absolute; /* Posiciona el fondo sobre la sección */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
-    z-index: 1; /* Asegura que esté detrás del contenido */
+/* Estilos para la flecha */
+.flecha {
+    cursor: pointer; /* Cambia el cursor a una mano */
+    font-size: 2em; /* Tamaño de la flecha */
+    margin-top: 20px; /* Espaciado superior */
+    transition: transform 0.3s ease; /* Animación de rotación */
 }
 
-.proyectos h2,
-.proyectos .proyectos-grid {
-    position: relative; /* Asegura que el contenido esté sobre el fondo */
-    z-index: 2; /* Coloca el contenido por encima del fondo semitransparente */
+.flecha:hover {
+    transform: scale(1.2); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos para la cuadrícula de proyectos */
+.proyectos-grid {
+    display: none; /* Ocultar inicialmente */
+    margin-top: 20px; /* Espaciado superior */
 }
 
 .proyecto {
     width: 30%;
     margin-bottom: 20px;
+    display: inline-block; /* Mostrar proyectos en línea */
 }
 
 .proyecto img {
