@@ -1,8 +1,10 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 header {
@@ -10,10 +12,6 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-}
-
-header .logo img {
-    height: 50px;
 }
 
 nav ul {
@@ -29,96 +27,143 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Estilos para la sección hero */
+/* Sección Hero */
 .hero {
-    background-color: white; /* Fondo blanco */
-    padding: 100px 20px; /* Espaciado interno */
-    text-align: center; /* Centrar el contenido */
-}
-
-.hero-contenido {
-    max-width: 800px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenedor */
-}
-
-.hero h1 {
-    font-size: 2.5em; /* Tamaño del título */
-    color: #333; /* Color del texto */
-    margin-bottom: 20px; /* Espaciado inferior */
-}
-
-.hero p {
-    font-size: 1.2em; /* Tamaño del párrafo */
-    color: #666; /* Color del texto */
-    margin-bottom: 30px; /* Espaciado inferior */
-}
-
-.hero .btn {
-    background-color: #ff6f61; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    text-decoration: none; /* Quitar subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 1em; /* Tamaño del texto del botón */
-}
-
-.btn {
-    background: #ff6f61;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Estilos para la sección de proyectos */
-.proyectos {
-    padding: 50px 20px;
+    background-color: white;
+    padding: 100px 20px;
     text-align: center;
 }
 
-/* Estilos para la flecha */
+.hero-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e65a50;
+}
+
+/* Sección Proyectos */
+.proyectos {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
 .flecha {
     cursor: pointer;
     font-size: 2em;
     margin-top: 20px;
-    color: #333; /* Color oscuro para combinar con el fondo */
+    color: #333;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .flecha:hover {
-    color: #ff6f61; /* Cambia el color al pasar el mouse */
+    color: #ff6f61;
     transform: scale(1.2);
 }
 
-/* Estilos para la cuadrícula de proyectos */
 .proyectos-grid {
-    display: none; /* Ocultar inicialmente */
-    margin-top: 20px; /* Espaciado superior */
+    display: none;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .proyecto {
-    width: 30%;
-    margin-bottom: 20px;
-    display: inline-block; /* Mostrar proyectos en línea */
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .proyecto img {
     width: 100%;
-    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
 }
 
-.nosotros, .servicios, .contacto {
+.proyecto h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.proyecto p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+/* Sección Nosotros */
+.nosotros {
     padding: 50px 20px;
     text-align: center;
+    background-color: white;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+/* Sección Servicios */
+.servicios {
+    padding: 50px 20px;
     text-align: center;
-    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.servicios ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Sección Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
 }
 
 form {
@@ -141,10 +186,23 @@ form input, form textarea {
 }
 
 form button {
-    background: #ff6f61;
-    color: #fff;
+    background-color: #ff6f61;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e65a50;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
