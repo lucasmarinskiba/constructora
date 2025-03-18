@@ -31,19 +31,37 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilos para la sección hero */
 .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
+    background-color: white; /* Fondo blanco */
+    padding: 100px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+}
+
+.hero-contenido {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenedor */
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Tamaño del párrafo */
+    color: #666; /* Color del texto */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.hero .btn {
+    background-color: #ff6f61; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño del texto del botón */
 }
 
 .btn {
