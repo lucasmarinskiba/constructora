@@ -80,14 +80,16 @@ nav ul li a {
 
 /* Estilos para la flecha */
 .flecha {
-    cursor: pointer; /* Cambia el cursor a una mano */
-    font-size: 2em; /* Tamaño de la flecha */
-    margin-top: 20px; /* Espaciado superior */
-    transition: transform 0.3s ease; /* Animación de rotación */
+    cursor: pointer;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #333; /* Color oscuro para combinar con el fondo */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .flecha:hover {
-    transform: scale(1.2); /* Efecto de escala al pasar el mouse */
+    color: #ff6f61; /* Cambia el color al pasar el mouse */
+    transform: scale(1.2);
 }
 
 /* Estilos para la cuadrícula de proyectos */
