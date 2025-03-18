@@ -250,11 +250,12 @@ footer {
 
 .contacto-contenido {
     max-width: 800px; /* Ancho máximo del contenido */
-    width: 100%;
+    width: 90%; /* Ocupa el 90% del ancho disponible */
     padding: 40px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centrar el contenedor */
 }
 
 .contacto h2 {
@@ -268,39 +269,41 @@ footer {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Más espacio entre los campos */
 }
 
 .form-group label {
     display: block;
     font-size: 1.1em;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Más espacio entre la etiqueta y el campo */
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px; /* Más padding para hacer los cuadros más grandes */
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px; /* Bordes más redondeados */
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 .form-group textarea {
     resize: vertical; /* Permite redimensionar verticalmente el textarea */
+    min-height: 150px; /* Altura mínima del cuadro de Mensaje */
 }
 
 .contacto button {
     background-color: #ff6f61;
     color: white;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 30px; /* Botón más grande */
+    font-size: 1.1em; /* Texto más grande */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Bordes más redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Botón ocupa todo el ancho */
 }
 
 .contacto button:hover {
