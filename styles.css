@@ -236,3 +236,62 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* Estilos para la sección Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contacto h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.form-group textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+.contacto button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #e65a50;
+}
