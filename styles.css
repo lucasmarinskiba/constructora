@@ -156,6 +156,73 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+/* Estilos para la sección Servicios */
+.servicios {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.servicios h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.servicio {
+    max-width: 800px;
+    margin: 0 auto 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.servicio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.servicio-header:hover {
+    background-color: #f1f1f1;
+}
+
+.servicio-header span {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.servicio-header i {
+    font-size: 1.2em;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.servicio-contenido {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.servicio-contenido p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+/* Clase para mostrar el contenido */
+.servicio-contenido.mostrar {
+    max-height: 200px; /* Ajusta según el contenido */
+    padding: 20px;
+}
+
 .nosotros p {
     font-size: 1.2em;
     color: #666;
