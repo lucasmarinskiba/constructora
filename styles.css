@@ -55,14 +55,26 @@ nav ul li a {
 }
 
 .proyectos {
+    position: relative; /* Necesario para posicionar el fondo semitransparente */
     padding: 50px 20px;
     text-align: center;
+    background-color: white; /* Fondo blanco */
 }
 
-.proyectos-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.fondo-semitransparente {
+    position: absolute; /* Posiciona el fondo sobre la sección */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: 1; /* Asegura que esté detrás del contenido */
+}
+
+.proyectos h2,
+.proyectos .proyectos-grid {
+    position: relative; /* Asegura que el contenido esté sobre el fondo */
+    z-index: 2; /* Coloca el contenido por encima del fondo semitransparente */
 }
 
 .proyecto {
