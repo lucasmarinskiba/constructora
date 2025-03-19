@@ -22,81 +22,85 @@
         </nav>
     </header>
 
+    <!-- Sección Hero -->
     <section id="inicio" class="hero">
-    <div class="hero-contenido">
-        <h1>Construyendo Futuros, Creando Hogares</h1>
-        <p>Somos líderes en proyectos residenciales y comerciales con un enfoque en calidad y sostenibilidad.</p>
-        <a href="#proyectos" class="btn">Ver Proyectos</a>
-    </div>
-</section>
+        <div class="hero-contenido">
+            <h1>Construyendo Futuros, Creando Hogares</h1>
+            <p>Somos líderes en proyectos residenciales y comerciales con un enfoque en calidad y sostenibilidad.</p>
+            <a href="#proyectos" class="btn">Ver Proyectos</a>
+        </div>
+    </section>
 
+    <!-- Sección Proyectos -->
     <section id="proyectos" class="proyectos">
-    <h2>Nuestros Proyectos</h2>
-    <div class="flecha" id="flecha">
-        <i class="fas fa-chevron-down"></i> <!-- Flecha hacia abajo -->
-    </div>
-    <div class="proyectos-grid" id="proyectos-grid" style="display: none;">
-        <div class="proyecto">
-            <img src="images/proyecto1.jpg" alt="Proyecto Residencial">
-            <h3>Proyecto Residencial</h3>
-            <p>Descubre nuestro último desarrollo residencial con acabados de lujo.</p>
+        <h2>Nuestros Proyectos</h2>
+        <div class="flecha" id="flecha">
+            <i class="fas fa-chevron-down"></i>
         </div>
-        <div class="proyecto">
-            <img src="images/proyecto2.jpg" alt="Proyecto Comercial">
-            <h3>Proyecto Comercial</h3>
-            <p>Espacios comerciales diseñados para el éxito de tu negocio.</p>
+        <div class="proyectos-grid" id="proyectos-grid">
+            <div class="proyecto">
+                <img src="images/proyecto1.jpg" alt="Proyecto Residencial">
+                <h3>Proyecto Residencial</h3>
+                <p>Descubre nuestro último desarrollo residencial con acabados de lujo.</p>
+            </div>
+            <div class="proyecto">
+                <img src="images/proyecto2.jpg" alt="Proyecto Comercial">
+                <h3>Proyecto Comercial</h3>
+                <p>Espacios comerciales diseñados para el éxito de tu negocio.</p>
+            </div>
+            <!-- Agrega más proyectos aquí -->
         </div>
-        <!-- Agrega más proyectos aquí -->
-    </div>
-</section>
+    </section>
 
+    <!-- Sección Nosotros -->
     <section id="nosotros" class="nosotros">
         <h2>Sobre Nosotros</h2>
         <p>Con más de 20 años de experiencia, Constructora XYZ se ha consolidado como una de las empresas líderes en el sector de la construcción, ofreciendo proyectos innovadores y sostenibles.</p>
     </section>
 
+    <!-- Sección Servicios -->
     <section id="servicios" class="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicio">
-        <div class="servicio-header" onclick="toggleServicio(1)">
-            <span>Construcción Residencial</span>
-            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <div class="servicio-header" onclick="toggleServicio(1)">
+                <span>Construcción Residencial</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="servicio-contenido" id="servicio-1">
+                <p>Ofrecemos construcción de viviendas unifamiliares y multifamiliares con los más altos estándares de calidad.</p>
+            </div>
         </div>
-        <div class="servicio-contenido" id="servicio-1">
-            <p>Ofrecemos construcción de viviendas unifamiliares y multifamiliares con los más altos estándares de calidad.</p>
+        <div class="servicio">
+            <div class="servicio-header" onclick="toggleServicio(2)">
+                <span>Construcción Comercial</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="servicio-contenido" id="servicio-2">
+                <p>Desarrollamos espacios comerciales modernos y funcionales para todo tipo de negocios.</p>
+            </div>
         </div>
-    </div>
-    <div class="servicio">
-        <div class="servicio-header" onclick="toggleServicio(2)">
-            <span>Construcción Comercial</span>
-            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
+        <div class="servicio">
+            <div class="servicio-header" onclick="toggleServicio(3)">
+                <span>Diseño Arquitectónico</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="servicio-contenido" id="servicio-3">
+                <p>Nuestro equipo de arquitectos diseña proyectos innovadores y personalizados.</p>
+            </div>
         </div>
-        <div class="servicio-contenido" id="servicio-2">
-            <p>Desarrollamos espacios comerciales modernos y funcionales para todo tipo de negocios.</p>
+        <div class="servicio">
+            <div class="servicio-header" onclick="toggleServicio(4)">
+                <span>Gestión de Proyectos</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="servicio-contenido" id="servicio-4">
+                <p>Gestionamos todos los aspectos de tus proyectos de construcción para garantizar su éxito.</p>
+            </div>
         </div>
-    </div>
-    <div class="servicio">
-        <div class="servicio-header" onclick="toggleServicio(3)">
-            <span>Diseño Arquitectónico</span>
-            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
-        </div>
-        <div class="servicio-contenido" id="servicio-3">
-            <p>Nuestro equipo de arquitectos diseña proyectos innovadores y personalizados.</p>
-        </div>
-    </div>
-    <div class="servicio">
-        <div class="servicio-header" onclick="toggleServicio(4)">
-            <span>Gestión de Proyectos</span>
-            <i class="fas fa-chevron-right"></i> <!-- Flecha hacia la derecha -->
-        </div>
-        <div class="servicio-contenido" id="servicio-4">
-            <p>Gestionamos todos los aspectos de tus proyectos de construcción para garantizar su éxito.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Sección Contacto -->
     <section id="contacto" class="contacto">
-    <div class="contacto-contenido">
         <h2>Contacto</h2>
         <form id="contactForm">
             <div class="form-group">
@@ -109,13 +113,13 @@
             </div>
             <div class="form-group">
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="8" required></textarea> <!-- Aumenté las filas -->
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit">Enviar</button>
         </form>
-    </div>
-</section>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 Constructora XYZ. Todos los derechos reservados.</p>
     </footer>
