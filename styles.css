@@ -30,19 +30,18 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilos para la sección Hero */
+/* Sección Hero */
 .hero {
-    position: relative; /* Necesario para el overlay */
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    position: relative;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Texto en blanco para contrastar con el fondo */
-    overflow: hidden; /* Evita que el fondo se desborde */
+    color: white;
+    overflow: hidden;
 }
 
-/* Imagen de fondo */
 .hero::before {
     content: '';
     position: absolute;
@@ -50,13 +49,12 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/skyline.png'); /* Ruta de tu imagen de fondo */
-    background-size: cover; /* Cubre toda la sección */
-    background-position: center; /* Centra la imagen */
-    z-index: -1; /* Coloca la imagen detrás del contenido */
+    background-image: url('images/fondo-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-/* Overlay semi-transparente */
 .hero::after {
     content: '';
     position: absolute;
@@ -64,14 +62,13 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
-    z-index: -1; /* Coloca el overlay detrás del contenido */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
-/* Contenido del Hero */
 .hero-contenido {
-    position: relative; /* Asegura que el contenido esté sobre el fondo */
-    z-index: 1; /* Coloca el contenido por encima del fondo y el overlay */
+    position: relative;
+    z-index: 1;
     max-width: 800px;
     padding: 20px;
 }
@@ -100,7 +97,19 @@ nav ul li a {
     background-color: #e65a50;
 }
 
-/* Estilos para la flecha */
+/* Sección Proyectos */
+.proyectos {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
 .flecha {
     cursor: pointer;
     font-size: 2em;
@@ -114,9 +123,8 @@ nav ul li a {
     transform: scale(1.2);
 }
 
-/* Estilos para la cuadrícula de proyectos */
 .proyectos-grid {
-    display: none; /* Ocultar inicialmente */
+    display: none;
     margin-top: 30px;
     gap: 20px;
     justify-content: center;
@@ -155,36 +163,18 @@ nav ul li a {
     padding: 0 15px 15px;
 }
 
-/* Estilos para la sección Sobre Nosotros */
+/* Sección Nosotros */
 .nosotros {
     padding: 50px 20px;
     text-align: center;
     background-color: white;
 }
 
-.nosotros-contenido {
-    max-width: 800px; /* Limita el ancho del contenido */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 0 20px; /* Espaciado lateral para dispositivos móviles */
-}
-
-.nosotros h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Estilos para la sección Servicios */
+/* Sección Servicios */
 .servicios {
     padding: 50px 20px;
     text-align: center;
     background-color: #f9f9f9;
-}
-
-.servicios h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
 }
 
 .servicio {
@@ -235,16 +225,44 @@ nav ul li a {
     padding: 0 0 20px;
 }
 
-/* Clase para mostrar el contenido */
 .servicio-contenido.mostrar {
-    max-height: 200px; /* Ajusta según el contenido */
+    max-height: 200px;
     padding: 20px;
 }
 
-.nosotros p {
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.6;
+/* Sección Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -253,77 +271,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-
-/* Estilos para la sección Contacto */
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.contacto-contenido {
-    max-width: 800px; /* Ancho máximo del contenido */
-    width: 90%; /* Ocupa el 90% del ancho disponible */
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Centrar el contenedor */
-}
-
-.contacto h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.contacto form {
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 25px; /* Más espacio entre los campos */
-}
-
-.form-group label {
-    display: block;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px; /* Más espacio entre la etiqueta y el campo */
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px; /* Más padding para hacer los cuadros más grandes */
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 8px; /* Bordes más redondeados */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
-}
-
-.form-group textarea {
-    resize: vertical; /* Permite redimensionar verticalmente el textarea */
-    min-height: 150px; /* Altura mínima del cuadro de Mensaje */
-}
-
-.contacto button {
-    background-color: #ff6f61;
-    color: white;
-    padding: 15px 30px; /* Botón más grande */
-    font-size: 1.1em; /* Texto más grande */
-    border: none;
-    border-radius: 8px; /* Bordes más redondeados */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%; /* Botón ocupa todo el ancho */
-}
-
-.contacto button:hover {
-    background-color: #e65a50;
 }
