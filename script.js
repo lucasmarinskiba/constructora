@@ -4,13 +4,27 @@ document.getElementById('flecha').addEventListener('click', function() {
     const flecha = document.getElementById('flecha');
 
     if (proyectosGrid.style.display === 'none' || proyectosGrid.style.display === '') {
-        proyectosGrid.style.display = 'flex'; // Mostrar proyectos
-        flecha.innerHTML = '<i class="fas fa-chevron-up"></i>'; // Cambiar flecha a arriba
+        proyectosGrid.style.display = 'flex';
+        flecha.innerHTML = '<i class="fas fa-chevron-up"></i>';
     } else {
-        proyectosGrid.style.display = 'none'; // Ocultar proyectos
-        flecha.innerHTML = '<i class="fas fa-chevron-down"></i>'; // Cambiar flecha a abajo
+        proyectosGrid.style.display = 'none';
+        flecha.innerHTML = '<i class="fas fa-chevron-down"></i>';
     }
 });
+
+// Mostrar/ocultar servicios al hacer clic en la flecha
+function toggleServicio(id) {
+    const contenido = document.getElementById(`servicio-${id}`);
+    const flecha = document.querySelector(`#servicio-${id}`).previousElementSibling.querySelector('i');
+
+    if (contenido.classList.contains('mostrar')) {
+        contenido.classList.remove('mostrar');
+        flecha.style.transform = 'rotate(0deg)';
+    } else {
+        contenido.classList.add('mostrar');
+        flecha.style.transform = 'rotate(90deg)';
+    }
+}
 
 // Validación del formulario de contacto
 document.getElementById('contactForm').addEventListener('submit', function(event) {
