@@ -98,10 +98,11 @@ nav ul li a {
 }
 
 /* Sección Proyectos */
+/* Estilos para la sección Proyectos */
 .proyectos {
     padding: 80px 20px;
-    background-color: #f9f9f9;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .proyectos h2 {
@@ -124,7 +125,7 @@ nav ul li a {
 }
 
 .proyectos-grid {
-    display: none;
+    display: none; /* Ocultar inicialmente */
     margin-top: 30px;
     gap: 20px;
     justify-content: center;
