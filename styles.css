@@ -31,17 +31,19 @@ nav ul li a {
 }
 
 /* Sección Hero */
+/* Estilos para la sección Hero */
 .hero {
-    position: relative;
-    min-height: 100vh;
+    position: relative; /* Necesario para el overlay */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    overflow: hidden;
+    color: white; /* Texto en blanco para contrastar con el fondo */
+    overflow: hidden; /* Evita que el fondo se desborde */
 }
 
+/* Imagen de fondo */
 .hero::before {
     content: '';
     position: absolute;
@@ -49,12 +51,13 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/fondo-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+    background-image: url('images/skyline.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Cubre toda la sección */
+    background-position: center; /* Centra la imagen */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
 }
 
+/* Overlay semi-transparente */
 .hero::after {
     content: '';
     position: absolute;
@@ -62,13 +65,14 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    z-index: -1; /* Coloca el overlay detrás del contenido */
 }
 
+/* Contenido del Hero */
 .hero-contenido {
-    position: relative;
-    z-index: 1;
+    position: relative; /* Asegura que el contenido esté sobre el fondo */
+    z-index: 1; /* Coloca el contenido por encima del fondo y el overlay */
     max-width: 800px;
     padding: 20px;
 }
